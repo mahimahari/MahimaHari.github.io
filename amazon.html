@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Amazon Reviews Classification</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper" class="fade-in">
+			
+		
+
+			<header id="header">
+				<a href="index.html" class="logo">
+					<img src="images/mah.jpg" alt=" " style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+						<h1><strong>Mahima Haridasan</strong></strong><br />
+						</h1>
+						<h4 style="color: #bdabab;">I am an Indian Data Science enthusiast turned Data Analytical storyteller.
+							Learning each day about Machine Learning , cooking up creative data insights and exact sciences like bakery.</h4>
+						
+				</a>
+				<ul class="icons">
+							
+							<li><a href="mailto:mahimaharidas22@gmail.com" class="icon solid fa-envelope"><span class="label">Gmail</span></a></li>
+							<li><a href="https://www.linkedin.com/in/mahima-haridasan-6480b01a1/" class="icon brands fa-linkedin" target="_blank">
+								<span class="label">LinkedIn</span>
+							</a></li>							
+							<li><a href="https://github.com/mahimahari" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</div>
+			</header>
+			
+
+
+
+			<div id="main">
+				<section class="content">
+					<article>
+						<div id="intro">
+				<h1>Amazon Reviews, Classification and Rating Predictions</h1>
+				<p>Working with one of my fellow enthusiast Data scientists I evaluated several models to classify the free text Amazon predictions into two classes: positive and negative, and another few models to predict the star rating for these same reviews. This project uses the Multilingual Amazon Reviews Corpus, and the full notebook can be found in this. <a href="https://github.com/mahimahari/TwitterSentimentalAnalysis2">repo</a></a></p>
+
+                
+			</div>
+						<header>
+							<h2><a href="#">Exploratory Data Analysis</a></h2>
+						</header>
+						<p>This dataset provided us with identical dev, test and train files, were the dev and test ones had 5.000 entries each, and the train one had 200.000, plus the star rating classes were perfectly balanced too! This is a peek at what these tables had to offer:</p>
+
+                        <img src="images/amazon1.png" alt="Data Exploration" style="width: 600px; height: auto;">
+                    </article>
+					<article>
+						<header>
+							<h2><a href="#">Processing & Pre-processing</a></h2>
+						</header>
+						<p>Our average review has 27.5 words in Spanish. To standardize the text, we converted everything to lowercase and removed accents. We labeled reviews as positive (4 and 5 stars) and negative (1, 2, and 3 stars).</p>
+                        <img src="images/amazon2.png" alt="Data Exploration" style="width: 600px; height: auto;">
+                    </article>
+					<article>
+						<header>
+							<h2><a href="#">Tokenization</a></h2>
+						</header>
+						<p>The long-honored NLP technique to evaluate a corpus of text by each word. We tokenized out reviews' titles and bodies, but not after having gotten rid of special characters, punctuation marks, misspelt words, numbers and (for now, wink) emojis.</p>
+                        <img src="images/amazon3.jpeg" alt="Data Exploration" style="width: 600px; height: auto;">
+                    </article>
+                    <header>
+                        <h2><a href="#">Lemmatization</a></h2>
+                    </header>
+                    <p>We used the SpaCy library for this part of our project, because of its well known performance in spanish. It was able to take our reviews and classify most word's tokens properly with a few lines of code:</p>
+                    <img src="images/amazon3.jpeg" alt="Data Exploration" style="width: 600px; height: auto;">
+                </article>
+					<article>
+						<header>
+							<h2><a href="#">Word Frequency Analysis</a></h2>
+						</header>
+						<p>We analyzed word frequency in positive and negative reviews, removing common terms like "quality" and "product" to focus on more meaningful words.</p>
+                        <img src="images/amazon4.jpeg" alt="Data Exploration" style="width: 600px; height: auto;">
+                    </article>
+				</section>
+				<section>
+					<p><strong style="font-size: 1.5em;">I want to hear from you!</strong><br>  
+						<strong>For any feedback, opinions on my project, job opportunities, and coffee meet-ups,</strong>
+						<a href="mailto:mahimaharidas22@gmail.com" style="font-weight: bold; font-size: 1.2em; color: #ff6600; text-decoration: underline;">send me a message!</a>
+					</p>
+				</section>
+			</div>
+
+			<footer id="footer">
+				
+			</footer>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

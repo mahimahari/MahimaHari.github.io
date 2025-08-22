@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>A Comparative Study of Classical and PINN Solvers for the Heat Equation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper" class="fade-in">
+
+			<header id="header">
+				<a href="index.html" class="logo">
+					<img src="images/mah.jpg" alt=" " style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+						<h1>Mahima Haridasan<br />
+						</h1>
+						<p>I am an Indian Data Science enthusiast turned Data Analytical storyteller.
+							Learning each day about Machine Learning , cooking up creative data insights and exact sciences like bakery.</p>
+						
+				</a>
+
+<ul class="icons">
+							
+							<li><a href="mailto:mahimaharidas22@gmail.com" class="icon solid fa-envelope"><span class="label">Gmail</span></a></li>
+							<li><a href="https://www.linkedin.com/in/mahima-haridasan-6480b01a1/" class="icon brands fa-linkedin" target="_blank">
+								<span class="label">LinkedIn</span>
+							</a></li>							
+							<li><a href="https://github.com/mahimahari" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+						
+                
+			</div>
+
+</header>
+			<div id="main">
+				<section class="content">
+					<article>
+						<div id="intro">
+				<h1>A Comparative Study of Classical and PINN Solvers for the Heat Equation</h1>
+				<p>The primary objective
+is to evaluate the accuracy and stability of PINNs
+by systematically varying neural network architectures,
+learning rates, and loss weight configurations. Each configuration
+is tested over multiple runs, and the results are
+assessed using the Average Relative Error (ARE) against
+FDM solutions. The study demonstrates the potential of
+PINNs in modeling thermal diffusion processes and provides
+insights into their behavior under different hyperparameter
+settings.. <a href="https://github.com/mahimahari/1-D-Heat-Equation">repo</a></a></p>
+						<header>
+							<h2><a href="#">Heat Equation</a></h2>
+						</header>
+						<p>The Heat Equation is a fundamental partial differential
+equation used to model the distribution of heat (or variation
+in temperature) in a given region over time . One
+of its key applications is in thermal analysis of materials
+and systems, providing insights into the diffusion of heat
+through a surface or object. In the context of our study,
+we consider this equation to simulate the diffusion of heat
+along a domain and observe how the temperature evolves
+with time under different conditions.
+<img src="images/H1.png" alt="Heat Equation" style="width: 600px; height: auto;"> <br>
+
+                    </article>
+					<article>
+						<header>
+							<h2><a href="#">FDM Solvers</a></h2>
+						</header>
+						<p>The Finite Difference Method is
+one of several techniques for obtaining numerical solutions
+to Heat Equation. In all numerical solvers, the continuous PDE is
+replaced with a discrete approximation.The core idea of the finite difference method is to replace
+continuous derivatives with difference formulas that
+involve only the discrete values associated with positions
+on the mesh.</p>
+                        
+						
+                    </article>
+					<article>
+						<header>
+							<h2><a href="#">How DO PINNs(Physics Informed Neural Network) Work? </a></h2>
+						</header>
+						<p>Use a Neural Network to approximate the solution of a PDE,               , by including physical
+ knowledge in the loss function. Automatic Differentiation makes partial derivatives straightforward to evaluate.
+</p>
+                    <img src="images/PINNs.png" alt="Data Exploration" style="width: 600px; height: auto;"> 
+					<img src="images/formula.png" alt="Data Exploration" style="width: 600px; height: auto;">   
+                    </article>
+                    <header>
+                        <h2><a href="#">Comparisons of FDM and PINNs for different Initial and boundary Conditions</a></h2>
+                    </header>
+                    
+                    <img src="images/Screenshot (465).png" alt="Data Exploration" style="width: 600px; height: auto;">
+					<img src="images/Screenshot (464).png" alt="Data Exploration" style="width: 600px; height: auto;">
+                </article>
+					<article>
+						<header>
+							<h2><a href="#">Results and Best Hyperparameters</a></h2>
+						</header>
+						<p> We Conclude that balance between the losses  is really important.
+ </p>
+                        <img src="images/lOSS WEIGHTS.png" alt="Data Exploration" style="width: 600px; height: auto;">
+						<p>The overall result with the best model 
+
+The first thing model will do focus on boundary and now its making the boundary and initial conditions go down first only then concentrating on pde ,lot faster than pde loss.Best Hyperparameters for 2-D Heat Equation:
+Architecture(3, 64, 64, 64, 1)
+Learning rate (0.001)
+Loss Weights (100, 100, 1)
+</p>
+					<img src="images/BH.png" alt="Data Exploration" style="width: 600px; height: auto;">
+                    </article>
+					
+				</section>
+				<section>
+					<p><strong style="font-size: 1.5em;">I want to hear from you!</strong><br>  
+						<strong>For any feedback, opinions on my project, job opportunities, and coffee meet-ups,</strong>
+						<a href="mailto:mahimaharidas22@gmail.com" style="font-weight: bold; font-size: 1.2em; color: #ff6600; text-decoration: underline;">send me a message!</a>
+					</p>
+				</section>
+			</div>
+
+			<footer id="footer">
+				
+			</footer>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

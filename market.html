@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Market </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper" class="fade-in">
+
+			<header id="header">
+				<a href="index.html" class="logo">
+					<img src="images/mah.jpg" alt=" " style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+						<h1><strong>Mahima Haridasan</strong></strong><br />
+						</h1>
+						<h4 style="color: #bdabab;">I am an Indian Data Science enthusiast turned Data Analytical storyteller.
+							Learning each day about Machine Learning , cooking up creative data insights and exact sciences like bakery.</h4>
+						
+				</a>
+				<ul class="icons">
+							
+							<li><a href="mailto:mahimaharidas22@gmail.com" class="icon solid fa-envelope"><span class="label">Gmail</span></a></li>
+							<li><a href="https://www.linkedin.com/in/mahima-haridasan-6480b01a1/" class="icon brands fa-linkedin" target="_blank">
+								<span class="label">LinkedIn</span>
+							</a></li>							
+							<li><a href="https://github.com/mahimahari" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+						</div>
+
+			
+			</header>
+
+
+			<div id="main">
+				<section class="content">
+					<article>
+						<div id="intro">
+				<h1>Enverus  Market Price Indices   Analysis  Case Study</h1>
+				<p>Pricing differs in various region depending upon the production and how it reaches out to the supplier chain and does produced good consumed by the buyer satisfies the responsible operations. So it has become more important than ever to streamline efforts and gain visibility into your spend in different markets. Traditional approaches cannot help in supply chain strategy because they don’t inform you on pricing trends. <a href="https://github.com/mahimahari/Market-Price-Indices">repo</a></p>
+                    
+                <ul class="actions">
+					
+				</ul>
+			</div>
+						<header>
+							<h2><a href="#">Overview of Dataset</a></h2>
+						</header>
+						<p>The datasets consists of 4524 rows and 8 columns it does not have any missing values the Index category says price spend on particular operations,Sub category various operations on well cost index used in two basins,Index is the Monthly Median price of all the prices for a category in a given region, Phigh is  75th Percentile value or the highest market price value in that month, Plow is  25th Percentile value or lowest both price benchmarked to the Index Baseline,Region has two basins which is oil well regions in US,Type is whether it is normalised  price for a normal operation.</p>
+
+                        <img src="images/code1.png" alt="Data Exploration" style="width: 600px; height: auto;">
+                    </article>
+					<article>
+						<header>
+							<h2><a href="#">SHORT STORY OF THE DATASET</a></h2>
+						</header>
+						<p>First lets see how the datasets look like and the information regarding the same, This index and other curves are created from a large repository of transactional data in the oilfield. The Index column in the Monthly Median price of all the prices for a category in a given region
+							The median was calculated on a monthly level for every category-subcategory combination since January 2018. This was then normalized the Value of January 2018 for the respective category-subcategory pair and multiply by 100.
+							</p>
+						
+                        <img src="images/pic1.PNG" alt="Data Exploration" style="width: 600px; height: auto;">
+                    </article>
+					<article>
+						<header>
+							<h2><a href="#">EXPLORATORY DATA ANALYSIS</a></h2>
+						</header>
+						
+                        <img src="images/pic2.PNG" alt="Data Exploration" style="width: 600px; height: auto;">
+						<img src="images/pic 3.PNG" alt="Data Exploration" style="width: 600px; height: auto;">
+                    
+                    
+                    <img src="images/pic4.PNG" alt="Data Exploration" style="width: 600px; height: auto;">
+					<img src="images/pic5.PNG" alt="Data Exploration" style="width: 600px; height: auto;">
+                </article>
+					<article>
+						<header>
+							<h2><a href="#">Comparing the commanalities of price trends by Basins</a></h2>
+						</header>
+						<p>A market pricing comparison in the Permian Basin to the Appalachian Basin is a perfect of how both buyers and suppliers can benefit from regional price trend analysis. The price variation in the Appalachian is much smaller than the Permian. This is because, while both areas have high activity, Appalachia is a very tightly controlled market with fewer supplier options for down hole and drilling. 
+						</p>
+						
+                        <img src="images/pic6.PNG" alt="Data Exploration" style="width: 600px; height: auto;">
+                    </article>
+					<article>
+						<header>
+							<h2><a href="#">Enverus Market price predictor</a></h2>
+						</header>
+						<p>As we validated the predicted price trend it seems the market indicies predictor have captured more than 95% of the  predictions correctly. So we can say Enverus Market indicies provide visibility into the impact of price changes on individual parts of complex services in different Basins.
+						</p>
+						
+                        <img src="images/pic7.PNG" alt="Data Exploration" style="width: 600px; height: auto;">
+                    </article>
+					<article>
+						<header>
+							<h2><a href="#">SUMMARIZING AND SOLUTIONS FOR THE PROJECT</a></h2>
+						</header>
+						<p class="question"><strong>Are there commonalities there?</strong></p>
+    <p class="answer">
+        Yes, there are commonalities since categorical and numerical variables are grouped in a way that each price index shows a high dependency rate. 
+        Some might be based on basin locations, while others might be related to well cost components (e.g., the 100 mesh Permian index) and how they influence the price index.
+    </p>
+
+    <p class="question"><strong>Can we “group” these commonalities?</strong></p>
+    <p class="answer">
+        We can create many group trends and themes related to the variables in this case study. I particularly grouped ‘Index’ and ‘Phigh’ with the regions because the correlation plot showed a high relationship between both variables. 
+        We can also group the well cost sub-category column with the index column to see how each index’s price trends look and which is better for further use.
+    </p>
+
+    <p class="question"><strong>Does that tell us something meaningful about the greater market trend?</strong></p>
+    <p class="answer">
+        A better understanding of how trends evolve can reveal new business opportunities and signal market changes. 
+        This helps buyers and suppliers maximize benefits, strengthens working relationships on both sides, and enables companies to move forward in the future.
+    </p>
+
+    <p class="question"><strong>What does this “group” trend look like in the future? Why?</strong></p>
+    <p class="answer">
+        As we compare index pricing by regions or basins, the predictor till the year 2022 shows fair predictions alongside the original values. 
+        So, in the future, it has a chance of performing well in the market. It also helps improve strategic pricing and reduce overspending risks.
+    </p>
+
+    <p class="question"><strong>Do these indices/time series of “groups” relate to external market indicators?</strong></p>
+    <p class="answer">
+        From a customer’s point of view, these insights allow them to compare their market price with Enverus market prices and see how the deviations in market trends vary. 
+        This helps determine which one is better.
+    </p>
+
+    <p class="question"><strong>What could be good indicators for the US oil and gas industry?</strong></p>
+    <p class="answer">
+        From the given understanding, I would say the level of production, consumer demand, and inventory level of oil and gas products are the leading indicators.
+    </p>
+
+    <p class="question"><strong>What are other indicators? US inflation rates?</strong></p>
+    <p class="answer">
+        One of the most popular indicators used by oil traders is crude inventories (stock levels), which is the amount of oil currently stored for future use, and growing economic strength. 
+        Higher inflation rates tend to lead to higher oil supplies.
+    </p>
+
+    <p class="question"><strong>Can we use any or all of these to create a narrative?</strong></p>
+    <p class="answer">
+        It depends on the time frame and other characteristic features of how one wants to tell the story of the dataset. 
+        However, key points and understanding should be provided in a way that even a third-party individual reading the narrative can grasp the key insights, 
+        understand the overall outlook, and extract meaningful takeaways.
+    </p>
+							<article>
+								<header>
+									<h2><a href="#">Conclusion</a></h2>
+								</header>
+								<P>To conclude, Enverus market price indicies provide insights both for buyers and suppliers where the buyers can see deviation from market trends, understand the economic impacts of pricing, uncover specific opportunities for additional cost savings, negotiate pricing agreements with suppliers and forecast future trends. For suppliers making the pricing analysis easy and sustainable also makes it more efficient to extract resources. This helps maximize the value generated from this analysis and also acts as a prescriptive system, driving strategies in poor performing areas.
+								</P>
+							</article>
+                        
+                    </article>
+				</section>
+				<section>
+					<p><strong style="font-size: 1.5em;">I want to hear from you!</strong><br>  
+						<strong>For any feedback, opinions on my project, job opportunities, and discussions,</strong>
+						<a href="mailto:mahimaharidas22@gmail.com" style="font-weight: bold; font-size: 1.2em; color: #ff6600; text-decoration: underline;">send me a message!</a>
+					</p>
+				</section>
+			</div>
+
+			<footer id="footer">
+				
+			</footer>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

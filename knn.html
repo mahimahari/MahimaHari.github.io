@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Our own KNN Implementation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper" class="fade-in">
+			
+		
+
+			<header id="header">
+				<a href="index.html" class="logo">
+					<img src="images/mah.jpg" alt=" " style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+						<h1><strong>Mahima Haridasan</strong></strong><br />
+						</h1>
+						<h4 style="color: #bdabab;">I am an Indian Data Science enthusiast turned Data Analytical storyteller.
+							Learning each day about Machine Learning , cooking up creative data insights and exact sciences like bakery.</h4>
+						
+				</a>
+				<ul class="icons">
+							
+							<li><a href="mailto:mahimaharidas22@gmail.com" class="icon solid fa-envelope"><span class="label">Gmail</span></a></li>
+							<li><a href="https://www.linkedin.com/in/mahima-haridasan-6480b01a1/" class="icon brands fa-linkedin" target="_blank">
+								<span class="label">LinkedIn</span>
+							</a></li>							
+							<li><a href="https://github.com/mahimahari" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</div>
+
+			
+			</header>
+
+
+			
+			<div id="main">
+				<section class="content">
+					
+			<div id="intro">
+				<h1>Our own KNN Implementation</h1>
+				<p>Machine learning algorithms are often evaluated by their simplicity, computational feasibility, and accuracy. KNN, or K-Nearest Neighbors, is one of the simplest yet surprisingly effective supervised classification algorithms. My classmate and I recently dove into this algorithm by building it from scratch and applying it to the waveform dataset — a classic benchmark problem. Here you can see the simple way we  implemented this algorithm, and check out the rest of the code for this project. <a href="https://github.com/mahimahari/KNN-with-Waveform-Dataset">repo</a></a></p>
+					
+				</ul>
+			</div>
+					<article>
+                        <p>The dataset consists of 5000 samples, 3 balanced classes, and 21 attributes, each laced with noise to make classification more challenging. Our task? Design and evaluate a KNN classifier capable of competing with the optimal Bayesian classification rate of 86%.</p>
+                        <img src="images/knn.jpeg" alt="Data Exploration" style="width: 600px; height: auto;">
+						<header>
+							<h2><a href="#">From Exploration to Optimization</a></h2>
+						</header>
+						<p>The first step in our project was an exploratory data analysis to better understand the dataset. We confirmed the features' normal distributions through Q-Q plots and identified clusters with significant class overlap using scatterplots. Fortunately, the dataset was high quality, with negligible outliers, allowing us to dive directly into classification. </p>
+                        <img src="images/qq_plots.png" alt="Data Exploration" style="width: 600px; height: auto;">
+                        <p>Next, we experimented with hyperparameter tuning. Through cross-validation with varying numbers of folds and neighbors, we found that a 5-fold cross-validation and k=40k=40k=40 neighbors achieved the best balance between accuracy and computational efficiency.</p>
+                        <img src="images/K-FOLDS.png" alt="Data Exploration" style="width: 600px; height: auto;">
+                        
+					</article>
+					<article>
+						<header>
+							<h2><a href="#">Speed and Scale</a></h2>
+						</header>
+						<p>To improve the algorithm's runtime, we implemented two data reduction techniques: Bayesian region cleaning and data condensation. These steps reduced the training data from 4000 samples to just over 600 while maintaining a near-optimal accuracy of 85%. While this approach reduced execution time by over 80%, we noted that in larger-scale applications, such reductions could prove invaluable.</p>
+                        <img src="images/speed.png" alt="Data Exploration" style="width: 600px; height: auto;">
+                        <p>We also experimented with KD-Trees to optimize the search for neighbors. Unfortunately, the high dimensionality of the dataset (21 features) and its modest size hindered performance, leading to slower execution times compared to the brute force approach.</p>
+					</article>
+					<article>
+						<header>
+							<h2><a href="#">Takeaways</a></h2>
+						</header>
+						
+						
+						<p>The waveform dataset is an excellent testing ground for KNN, given its challenging class overlaps and noise. While our implementation achieved competitive accuracy, further work could explore dimensionality reduction techniques or advanced indexing structures for larger datasets.</p>
+					</article>
+				</section>
+				<section>
+					<p><strong style="font-size: 1.5em;">I want to hear from you!</strong><br>  
+						<strong>For any feedback, opinions on my project, job opportunities, and discussions,</strong>
+						<a href="mailto:mahimaharidas22@gmail.com" style="font-weight: bold; font-size: 1.2em; color: #ff6600; text-decoration: underline;">send me a message!</a>
+					</p>
+				</section>
+			</div>
+
+			<footer id="footer">
+				
+			</footer>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
